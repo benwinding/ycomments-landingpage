@@ -41,6 +41,7 @@
             <a class="logo logo">
               <img src="images/icon-white.svg" alt="YCommentsCompany Logo">
             </a>
+            <h1 class="heading-med primary-color">YComments</h1>
             <a href="mailto:hello@benwinding.com" class="nav-link secondary-color mr0">Contact</a>
           </div>
         </div>
@@ -63,7 +64,28 @@
         <div class="container mt75">
           <div class="col-12">
             <div class="codeblock">
-              <pre><code class="hljs dockerfile"><table class="hljs-ln"><tbody><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="1"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-comment">// 1. Add the javascript file to your header</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="2"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">&lt;script src=<span class="hljs-string">"https://cdn.rawgit.com/benwinding/ycomments/ee4ab3ec/dist/ycomments.min.js"</span> &gt;&lt;/script&gt;</div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="3"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"> </div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="4"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-comment">// 2. Add the div tag where you want the comments to end up.</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="5"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">&lt;div <span class="hljs-keyword">from</span>=<span class="hljs-string">"hn"</span>&gt;&lt;/div&gt;</div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="6"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"> </div></td></tr></tbody></table></code></pre>
+              <pre><code class="hljs dockerfile"><table class="hljs-ln"><tbody><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="1"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-comment">// 1. Add the javascript file to your header</span></div></td></tr><tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="2"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line">&lt;script src=<span class="hljs-string">"https://cdn.rawgit.com/benwinding/ycomments/b7310c55/dist/ycomments.min.js"</span> &gt;&lt;/script&gt;</div></td></tr>
+                <tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="3"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"> </div></td></tr>
+
+                <tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="4"></div></td>
+                <td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-comment">// 2. Add the div tag where you want the comments to end up.</span></div></td></tr>
+
+<tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="3"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"> </div></td></tr>
+                <tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="4"></div></td>
+                <td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-comment">// Automatic lookup based on page URL.</span></div></td></tr>
+                <tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="5"></div></td>
+                <td class="hljs-ln-code"><div class="hljs-ln-line">&lt;div <span class="hljs-keyword">comments</span>=<span class="hljs-string">"auto"</span>&gt;&lt;/div&gt;</div></td></tr>
+
+                <tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="4"></div></td>
+                <td class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-comment">// Manual lookup based on post id.</span></div></td></tr>
+                <tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="5"></div></td>
+                <td class="hljs-ln-code"><div class="hljs-ln-line">&lt;div <span class="hljs-keyword">comments</span>=<span class="hljs-string">"16582136"</span>&gt;&lt;/div&gt;</div></td></tr>
+
+                <tr><td class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="6"></div></td><td class="hljs-ln-code"><div class="hljs-ln-line"> </div></td>
+                </tr>
+
+
+              </tbody></table></code></pre>
             </div>
           </div>
         </div>
@@ -113,10 +135,10 @@
         <div class="col-12 mt40">
           <div class="faq pad20">
             <b class="bold primary-color">
-              How does this work, in "auto mode"?
+              Why did you make this?
             </b>
             <p class="paragraph secondary-color">
-              It queries the Hacker News API directly using the current URL of the page it's on.
+              I wanted to see if it was possible to dynamically show the related discussion on the site it was on... pretty meta
             </p>
           </div>
           <div class="faq pad20">
@@ -129,11 +151,15 @@
           </div>
           <div class="faq pad20">
             <b class="bold primary-color">
-              Why did you make this?
+              How does this work, in "auto mode"?
             </b>
             <p class="paragraph secondary-color">
-              I wanted to see if it was possible to dynamically show the related discussion on the site it was on... pretty meta
+              It queries the Hacker News API directly using the current URL of the page it's on.
             </p>
+          </div>
+          <div class="pad20">
+            <script src="https://cdn.rawgit.com/benwinding/ycomments/b7310c55/dist/ycomments.min.js"></script>
+            <div comments="auto" ></div>
           </div>
         </div>
       </div>
