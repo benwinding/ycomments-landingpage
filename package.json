@@ -1,5 +1,8 @@
 {
+  "scripts": {
+    "deploy": "yarn dokku-pages deploy -g dokku@benwinding.com:ycomments -d public/ --minimal"
+  },
   "dependencies": {
-    "express": "^4.16.3"
+    "dokku-pages": "^1.0.2"
   }
 }
